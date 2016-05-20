@@ -22,9 +22,8 @@
             let data = "pic="+picData;
             data = data.replace(/%20/g,'+');
             let xhr = new XMLHttpRequest();
-            xhr.open('POST','jakis_adres');
-            xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
-            // xhr.setRequestHeader('Content-Length',data.length);
+            xhr.open('POST', 'save', true);
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded; charset=utf-8');
             xhr.send(data);
         }
         btnFoto.onclick = function btnPhotoClick(evt) {
